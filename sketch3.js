@@ -35,7 +35,7 @@ function draw() {
   smoothedVol = lerp(smoothedVol, vol, 0.1);
   
   // Map the smoothed volume to the decoherence level (0 to 1).
-  let decoherence = map(smoothedVol, 0, 0.15, 0, 1, true);
+  let decoherence = map(smoothedVol, 0, 0.05, 0, 1, true);
   
   globalRotation += 0.01;
   
